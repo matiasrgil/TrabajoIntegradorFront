@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #343a40;
+}
+
+#flex-header {
+  font-size: large;
+}
+
+#parrafo-header {
+  margin: 0;
+  padding: 0;
+}
+
+#img-Carrousel {
+  background-color: black;
+  background-blend-mode: soft-light;
+}
+
+#skills-card-body {
+  padding: 0 0.25rem;
+}
+
+main p {
+  font-size: 0.65rem;
+}
+
+#img-img-article {
+  border-right: 0.1rem solid white;
+}
+
+#p-article-info-article {
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+}
+
+.txt-p-form {
+  text-decoration-style: dotted;
+  padding: 0;
+  margin: 0;
+}
+
+#btn-form-enviar {
+  background: #96c93e;
+}
+
+#ContainerFooter {
+  height: 7rem;
+  background-color: #1d506d;
+}
+
+.container-fluid ul li a {
+  color: white !important;
+}
