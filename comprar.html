@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/comprarStyle.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <title>Conferencias Buenos Aires</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid bg-dark d-block w-100">
+        <div class="row d-flex justify-content-center">
+          <div
+            class="row col-4 d-flex justify-content-center align-items-center"
+            id="flex-header"
+          >
+            <img
+              src="./img/codoacodo.png"
+              alt="imgBanner"
+              class="img-header col-6"
+              width="125px"
+              height="75px"
+            />
+            <p class="p-header text-white col-6" id="parrafo-header">
+              Conf Bs As
+            </p>
+          </div>
+          <nav
+            class="navbar navbar-expand-md navbar-light bg-dark col-8 text-right text-center p-0"
+          >
+            <div class="conf">
+              <a class="nav-link text-white" href="./index.html"
+                >La conferencia</a
+              >
+            </div>
+            <!--Menu hamburguesa-->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <div class="conferencia">
+                  <a class="nav-link text-white" href="./index.html"
+                    >La conferencia</a
+                  >
+                </div>
+                <a class="nav-link text-secondary" href="#">Los oradores</a>
+                <a class="nav-link text-secondary" href="#"
+                  >El lugar y la fecha</a
+                >
+                <a class="nav-link text-secondary" href="#"
+                  >Convierte en orador</a
+                >
+                <a class="nav-link text-success" href="./comprar.html"
+                  >Comprar Tickets</a
+                >
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="sect-tarjetas">
+        <div class="tarjetas">
+          <div class="tarjeta border-primary">
+            <h4>Estudiante</h4>
+            <p class="font-size-p m-0">Tienen un descuento</p>
+            <h5>80%</h5>
+            <p class="small">*presentar documentacion</p>
+          </div>
+
+          <div class="tarjeta border-info">
+            <h4>Trainee</h4>
+            <p class="font-size-p m-0">Tienen un descuento</p>
+            <h5>50%</h5>
+            <p class="small font-size-p-ch">*presentar documentacion</p>
+          </div>
+
+          <div class="tarjeta border-warning">
+            <h4>Junior</h4>
+            <p class="font-size-p m-0">Tienen un descuento</p>
+            <h5>15%</h5>
+            <p class="small font-size-p-ch">*presentar documentacion</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sect-form m-3 d-flex justify-content-center">
+        <div
+          class="d-flex flex-column text-center align-items-center"
+          id="texto-titulo"
+        >
+          <p class="mt-1 mb-0">VENTA</p>
+          <h2>VALOR DE TICKET $200</h2>
+          <div class="container-fluid">
+            <form class="container-fluid form-sect-form-comprar" id="form">
+              <div class="row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Nombre"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="surname"
+                    placeholder="Apellido"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control mt-4"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  placeholder="Correo"
+                />
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <label for="cantidad align-content-start">Cantidad</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cantidad"
+                    placeholder="Cantidad"
+                  />
+                </div>
+                <div class="col">
+                  <label for="categoria align-content-start">Categoria</label>
+                  <select class="form-control" id="categoria">
+                    <option id="estudiante">Estudiante</option>
+                    <option id="trainee">Trainee</option>
+                    <option id="junior">Junior</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="p-2" id="totalCuenta">
+                <p id="p-$">Total a pagar: $</p>
+                <p id="p-total"></p>
+              </div>
+
+              <div class="container-fluid d-flex w-100 p-0 mb-3">
+                <button
+                  type="submit"
+                  class="btn btn-success w-100 border-0 p-2 mr-1 ml-0 btn-form"
+                  id="btn-clear"
+                >
+                  Borrar
+                </button>
+
+                <button
+                  type="submit"
+                  class="btn btn-success w-100 border-0 p-2 ml-1 mr-0 btn-form"
+                  id="btn-send"
+                >
+                  Resumen
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="scripts">
+      <script
+        src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"
+      ></script>
+      <script src="./app/app.js"></script>
+    </div>
+
+    <footer>
+      <div class="container-fluid m-0 p-0">
+        <nav
+          class="navbar navbar-expand-md navbar-light d-flex justify-content-center m-0 p-0"
+          style="background-color: #1d506d"
+        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse w-100 alingt"
+            id="navbarSupportedContent"
+          >
+            <div
+              class="container-fluid row w-100 d-flex justify-content-center m-0 p0"
+            >
+              <ul
+                class="navbar-nav mr-auto d-flex justify-content-center text-center col-12 m-0 p-0"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Prensa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Conferencias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Términos y condiciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Privacidad</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Estudiantes</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

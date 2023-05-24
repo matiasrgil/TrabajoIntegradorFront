@@ -17,12 +17,12 @@
       crossorigin="anonymous"
     />
 
-    <title>TrabajoIntegrador</title>
+    <title>Conferencias Buenos Aires</title>
   </head>
   <body>
     <header>
-      <div class="container bg-dark d-block w-100">
-        <div class="row">
+      <div class="container-fluid bg-dark d-block w-100">
+        <div class="row d-flex justify-content-center">
           <div
             class="row col-4 d-flex justify-content-center align-items-center"
             id="flex-header"
@@ -39,9 +39,13 @@
             </p>
           </div>
           <nav
-            class="navbar navbar-expand-md navbar-light bg-dark col-8 text-center"
+            class="navbar navbar-expand-md navbar-light bg-dark col-8 text-right text-center p-0"
           >
-            <a class="nav-link text-white" href="#">La conferencia</a>
+            <div class="conf">
+              <a class="nav-link text-white" href="./index.html"
+                >La conferencia</a
+              >
+            </div>
             <!--Menu hamburguesa-->
             <button
               class="navbar-toggler"
@@ -56,6 +60,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
+                <div class="conferencia">
+                  <a class="nav-link text-white" href="./index.html"
+                    >La conferencia</a
+                  >
+                </div>
                 <a class="nav-link text-secondary" href="#">Los oradores</a>
                 <a class="nav-link text-secondary" href="#"
                   >El lugar y la fecha</a
@@ -63,7 +72,9 @@
                 <a class="nav-link text-secondary" href="#"
                   >Convierte en orador</a
                 >
-                <a class="nav-link text-success" href="#">Comprar Tickets</a>
+                <a class="nav-link text-success" href="./comprar.html"
+                  >Comprar Tickets</a
+                >
               </div>
             </div>
           </nav>
@@ -134,7 +145,11 @@
                     aria-label="Second group"
                   >
                     <button type="button" class="btn btn-success">
-                      Comprar ticket
+                      <a
+                        class="text-white text-decoration-none"
+                        href="./comprar.html"
+                        >Comprar ticket</a
+                      >
                     </button>
                   </div>
                 </div>
@@ -186,7 +201,11 @@
                     aria-label="Second group"
                   >
                     <button type="button" class="btn btn-success">
-                      Comprar ticket
+                      <a
+                        class="text-white text-decoration-none"
+                        href="./comprar.html"
+                        >Comprar ticket</a
+                      >
                     </button>
                   </div>
                 </div>
@@ -239,7 +258,11 @@
                     aria-label="Second group"
                   >
                     <button type="button" class="btn btn-success">
-                      Comprar ticket
+                      <a
+                        class="text-white text-decoration-none"
+                        href="./comprar.html"
+                        >Comprar ticket</a
+                      >
                     </button>
                   </div>
                 </div>
@@ -249,12 +272,12 @@
         </div>
       </section>
 
-      <section class="oradores d-flex flex-column align-items-center p-0 mt-22">
+      <section class="oradores d-flex flex-column align-items-center p-0 mt-2">
         <div
           class="container d-flex flex-column text-center align-items-center"
           id="texto-titulo"
         >
-          <p class="mt-1 mb-0">CONOCE A LOS</p>
+          <p class="mt-1 mb-0 p-cards">CONOCE A LOS</p>
           <h3>ORADORES</h3>
         </div>
         <section class="cards d-flex justify-content-center w-75 mb-4">
@@ -268,20 +291,20 @@
               <div class="card-body">
                 <div class="container d-flex align-items-lg-start m-0 p-0">
                   <p
-                    class="font-weight-bold m-1 bg-warning rounded"
+                    class="font-weight-bold m-1 bg-warning rounded p-cards"
                     id="skills-card-body"
                   >
                     JavaScript
                   </p>
                   <p
-                    class="font-weight-bold m-1 bg-info text-white rounded"
+                    class="font-weight-bold m-1 bg-info text-white rounded p-cards"
                     id="skills-card-body"
                   >
                     React
                   </p>
                 </div>
                 <h5 class="card-title">Steve Jobs</h5>
-                <p class="card-text">
+                <p class="card-text p-cards">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Debitis earum totam neque, rerum quae laboriosam voluptate
                   optio! Debitis similique exercitationem nisi magni dolorem
@@ -294,20 +317,20 @@
               <div class="card-body">
                 <div class="container d-flex align-items-lg-start m-0 p-0">
                   <p
-                    class="font-weight-bold m-1 bg-warning rounded"
+                    class="font-weight-bold m-1 bg-warning rounded p-cards"
                     id="skills-card-body"
                   >
                     JavaScript
                   </p>
                   <p
-                    class="font-weight-bold m-1 bg-info text-white rounded"
+                    class="font-weight-bold m-1 bg-info text-white rounded p-cards"
                     id="skills-card-body"
                   >
                     React
                   </p>
                 </div>
                 <h5 class="card-title">Bill Gates</h5>
-                <p class="card-text">
+                <p class="card-text p-cards">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Debitis earum totam neque, rerum quae laboriosam voluptate
                   optio! Debitis similique exercitationem nisi magni dolorem
@@ -325,20 +348,20 @@
               <div class="card-body">
                 <div class="container d-flex align-items-lg-start m-0 p-0">
                   <p
-                    class="font-weight-bold m-1 bg-secondary text-white rounded"
+                    class="font-weight-bold m-1 bg-secondary text-white rounded p-cards"
                     id="skills-card-body"
                   >
                     Negocios
                   </p>
                   <p
-                    class="font-weight-bold m-1 bg-danger text-white rounded"
+                    class="font-weight-bold m-1 bg-danger text-white rounded p-cards"
                     id="skills-card-body"
                   >
                     StartUps
                   </p>
                 </div>
                 <h5 class="card-title">Ada Lovelace</h5>
-                <p class="card-text">
+                <p class="card-text p-cards">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Debitis earum totam neque, rerum quae laboriosam voluptate
                   optio! Debitis similique exercitationem nisi magni dolorem
@@ -351,7 +374,7 @@
       </section>
 
       <section class="img-info">
-        <div class="row m-0">
+        <div class="div-img-info container-fluid">
           <img
             src="./img/honolulu.jpg"
             alt="img Hawai"
@@ -359,8 +382,8 @@
             id="img-img-article"
           />
           <article class="col-6 bg-dark text-white" id="img-info-article">
-            <h2 class="titulo-article">Bs As - Octubre</h2>
-            <p class="x-small" id="p-article-info-article">
+            <h4 class="titulo-article mt-3">Bs As - Octubre</h4>
+            <p id="p-article-info-article">
               Buenos Aires es la provincia y localidad mas grande del estado de
               Argentina, es los Estados Unidos. Honolulu es la mas sureña de
               entre las principales ciudades estadounidenses. Aunque el nombre
@@ -370,18 +393,18 @@
               (aproximadamente 600 km2 de superficie).<br />
             </p>
             <button type="button" class="btn btn-outline-light m-0 p-1">
-              <p class="m-0 p-0">Conocé mas</p>
+              <p class="m-0 p-0" id="p-btn-article-info-article">Conocé mas</p>
             </button>
           </article>
         </div>
       </section>
 
-      <section class="formulario m-3">
+      <section class="sect-form m-3 d-flex justify-content-center">
         <div
-          class="container d-flex flex-column text-center align-items-center"
+          class="d-flex flex-column text-center align-items-center"
           id="texto-titulo"
         >
-          <p class="mt-1 mb-0">CONVIERTE EN UN</p>
+          <p class="mt-1 mb-0 p-cards">CONVIERTE EN UN</p>
           <h3>ORADOR</h3>
           <p class="small mt-1 mb-2">
             Anótate como orador para dar una
@@ -389,106 +412,123 @@
             hablar!
           </p>
 
-          <form class="w-75">
-            <div class="row">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Nombre" />
+          <div class="container-fluid">
+            <form class="container-fluid form-sect-form-comprar" id="form">
+              <div class="row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Nombre"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Apellido"
+                  />
+                  <form
+                    class="container-fluid form-sect-form-comprar"
+                    id="form"
+                  ></form>
+                </div>
               </div>
-              <div class="col">
-                <input
-                  type="text"
+
+              <div class="form-group mb-0">
+                <label for="exampleFormControlTextarea1"></label>
+                <textarea
                   class="form-control"
-                  placeholder="Apellido"
-                />
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Sobre que quieres hablar?"
+                ></textarea>
               </div>
-            </div>
 
-            <div class="form-group mb-0">
-              <label for="exampleFormControlTextarea1"></label>
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-                placeholder="Sobre que quieres hablar?"
-              ></textarea>
-            </div>
+              <p
+                class="pie-form align-content-start d-flex justify-content-start mt-1 p-cards"
+              >
+                Recuerda incluir un titulo para tu charla.
+              </p>
 
-            <p
-              class="pie-form align-content-start d-flex justify-content-start mt-1"
-            >
-              Recuerda incluir un titulo para tu charla.
-            </p>
-
-            <button
-              type="button"
-              class="btn btn-success w-100 border-0"
-              id="btn-form-enviar"
-            >
-              Enviar
-            </button>
-          </form>
+              <button
+                type="button"
+                class="btn btn-success w-100 border-0 btn-form"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"
-    ></script>
+    <div class="scripts">
+      <script
+        src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"
+      ></script>
+    </div>
 
     <footer>
-      <nav
-        class="navbar navbar-expand-md navbar-light d-flex justify-content-center"
-        style="background-color: #1d506d"
-      >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+      <div class="container-fluid m-0 p-0">
+        <nav
+          class="navbar navbar-expand-md navbar-light d-flex justify-content-center m-0 p-0"
+          style="background-color: #1d506d"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
-          <div class="container-fluid row w-100">
-            <ul
-              class="navbar-nav mr-auto d-flex justify-content-center text-center col-12"
+          <div
+            class="collapse navbar-collapse w-100 alingt"
+            id="navbarSupportedContent"
+          >
+            <div
+              class="container-fluid row w-100 d-flex justify-content-center m-0 p0"
             >
-              <li class="nav-item">
-                <a class="nav-link" href="#">Preguntas Frecuentes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contáctanos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Prensa</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Conferencias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Términos y condiciones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Privacidad</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Estudiantes</a>
-              </li>
-            </ul>
+              <ul
+                class="navbar-nav mr-auto d-flex justify-content-center text-center col-12 m-0 p-0"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Prensa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Conferencias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Términos y condiciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Privacidad</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Estudiantes</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>

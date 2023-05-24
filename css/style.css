@@ -11,6 +11,10 @@ header {
   font-size: large;
 }
 
+.conferencia {
+  display: none;
+}
+
 #parrafo-header {
   margin: 0;
   padding: 0;
@@ -25,8 +29,14 @@ header {
   padding: 0 0.25rem;
 }
 
-main p {
+.p-cards {
   font-size: 0.65rem;
+}
+
+.div-img-info {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
 }
 
 #img-img-article {
@@ -38,14 +48,24 @@ main p {
   line-height: 1.2rem;
 }
 
-.txt-p-form {
-  text-decoration-style: dotted;
-  padding: 0;
-  margin: 0;
+#p-btn-article-info-article {
+  font-size: 0.75rem;
 }
 
-#btn-form-enviar {
-  background: #96c93e;
+.sect-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.txt-p-form {
+  text-decoration-style: dotted;
+  flex-wrap: wrap;
+}
+
+.btn-form {
+  background: #96c93e !important;
 }
 
 #ContainerFooter {
@@ -55,4 +75,38 @@ main p {
 
 .container-fluid ul li a {
   color: white !important;
+}
+
+@media screen and (max-width: 767px) {
+  .p-header {
+    display: none;
+  }
+
+  .img-header {
+    display: none;
+  }
+
+  .div-img-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .conf a {
+    display: none;
+  }
+
+  .conf {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../img/codoacodo.png");
+    background-size: cover;
+    background-position: center center;
+    width: 7rem;
+    height: 5rem;
+  }
+
+  .conferencia {
+    display: block;
+  }
 }
